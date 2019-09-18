@@ -1,0 +1,15 @@
+.app-button {
+    padding: 5px 10px;
+    margin-right: 10px;
+    border: 1px solid #d5dde5;
+    border-radius: 5px;
+    color: #212934;
+    font-size: 12px;
+    
+    &.primary {
+        border: 1px solid #004ba0;
+        color: #fff;
+        background: #0751a5;
+        background: linear-gradient(0deg, #0751a5 0%, #1463be 100%);
+    }
+}

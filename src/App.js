@@ -3,7 +3,7 @@ import './App.scss';
 import CommentEditor from './components/CommentEditor';
 import Avatar from './components/Avatar';
 
-function App() {
+export default function App() {
   return (
     <div className="app">
       <Avatar />
@@ -11,5 +11,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

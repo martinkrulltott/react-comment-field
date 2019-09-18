@@ -2,6 +2,7 @@ import React from "react";
 import { Editor, EditorState, RichUtils } from "draft-js";
 import './CommentEditor.scss';
 import EditorToolbar from './EditorToolbar';
+import AppButton from './AppButton';
 
 export default class CommentEditor extends React.Component {
 	constructor(props) {
@@ -71,17 +72,25 @@ export default class CommentEditor extends React.Component {
 	render() {
 		return (
 			<div className={"comment-editor " + (this.state.editing ? 'editing' : '')} onClick={this.onContainerClick}>
-				{ this.state.editing &&
-					<EditorToolbar clickHandler={this.handleClick}/>
-				}
-				<div className="editor">
-					<Editor
-						editorState={this.state.editorState}
-						handleKeyCommand={this.handleKeyCommand}
-						onChange={this.onChange}
-						placeholder="Write a comment"
-					/>
+				<div className="editor-container">
+					{ this.state.editing &&
+						<EditorToolbar clickHandler={this.handleClick}/>
+					}
+					<div className="editor">
+						<Editor
+							editorState={this.state.editorState}
+							handleKeyCommand={this.handleKeyCommand}
+							onChange={this.onChange}
+							placeholder="Write a comment"
+						/>
+					</div>
 				</div>
+				{ this.state.editing &&
+					<div>
+						<AppButton name="Save interpretation" primary></AppButton>
+						<AppButton name="Cancel"></AppButton>
+					</div>
+				}
 			</div>
 		);
 	}

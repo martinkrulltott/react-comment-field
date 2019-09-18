@@ -1,31 +1,32 @@
 .comment-editor {
     width: 300px;
-    border: 1px solid #999;
-    border-radius: 5px;
     margin-left: 10px;
-}
-
-.editor {
-    height: 40px;
-    padding: 8px;
-
-    .public-DraftEditor-content {
-        height: 70px;
+    
+    .editor-container {
+        margin-bottom: 10px;
+        border: 1px solid #999;
+        border-radius: 5px;
     }
 
-    /* Fix for a bug with the placeholder */
-    .public-DraftEditorPlaceholder-root {
-        color: #999;
-        position: absolute;
-        z-index: -1;
-    }
-}
-
-.editing {
     .editor {
-        height: 70px;
+        height: 40px;
+        padding: 8px;
+    
+        .public-DraftEditor-content {
+            height: 70px;
+        }
+    
+        /* Fix for a bug with the placeholder */
+        .public-DraftEditorPlaceholder-root {
+            color: #999;
+            position: absolute;
+            z-index: -1;
+        }
+    }
+    
+    &.editing {
+        .editor {
+            height: 70px;
+        }
     }
 }
-
-
-
