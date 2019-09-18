@@ -1,16 +1,16 @@
 .comment-editor {
-    width: 250px;
+    width: 300px;
     border: 1px solid #999;
-    border-radius: 3px;
+    border-radius: 5px;
     margin-left: 10px;
 }
 
 .editor {
-    height: 50px;
-    padding: 5px;
+    height: 40px;
+    padding: 8px;
 
     .public-DraftEditor-content {
-        height: 100px;
+        height: 70px;
     }
 
     /* Fix for a bug with the placeholder */
@@ -23,7 +23,7 @@
 
 .editing {
     .editor {
-        height: 100px;
+        height: 70px;
     }
 }
 
