@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-comment-field/static/css/main.c4e2c134.chunk.css",
+    "main.js": "/react-comment-field/static/js/main.f036512e.chunk.js",
+    "main.js.map": "/react-comment-field/static/js/main.f036512e.chunk.js.map",
+    "runtime~main.js": "/react-comment-field/static/js/runtime~main.30703ec5.js",
+    "runtime~main.js.map": "/react-comment-field/static/js/runtime~main.30703ec5.js.map",
+    "static/js/2.827ca2f0.chunk.js": "/react-comment-field/static/js/2.827ca2f0.chunk.js",
+    "static/js/2.827ca2f0.chunk.js.map": "/react-comment-field/static/js/2.827ca2f0.chunk.js.map",
+    "index.html": "/react-comment-field/index.html",
+    "precache-manifest.053a3a42110d4e296f1948a77569b3c2.js": "/react-comment-field/precache-manifest.053a3a42110d4e296f1948a77569b3c2.js",
+    "service-worker.js": "/react-comment-field/service-worker.js",
+    "static/css/main.c4e2c134.chunk.css.map": "/react-comment-field/static/css/main.c4e2c134.chunk.css.map",
+    "static/media/avatar.jpg": "/react-comment-field/static/media/avatar.47b3f353.jpg"
+  }
+}
