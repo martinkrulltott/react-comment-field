@@ -1,0 +1,25 @@
+.editor-button {
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 0;
+    padding: 5px;
+    margin-right: 8px;
+    cursor: pointer;
+
+    &.bold {
+        font-weight: bold;
+    }
+
+    &.italic {
+        font-style: italic;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    &.underline {
+        text-decoration: underline;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}

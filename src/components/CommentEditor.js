@@ -1,8 +1,9 @@
 import React from "react";
 import { Editor, EditorState, RichUtils } from "draft-js";
 import './CommentEditor.scss';
+import EditorToolbar from './EditorToolbar';
 
-class CommentEditor extends React.Component {
+export default class CommentEditor extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -51,15 +52,27 @@ class CommentEditor extends React.Component {
 		);
 	};
 
+	handleClick = action => {
+		switch(action) {
+			case "bold":
+				this.onBoldClick();
+				break;
+			case "italic":
+				this.onItalicClick();
+				break;
+			case "underline":
+				this.onUnderlineClick();
+				break;
+			default:
+				break;
+		}
+	  };
+
 	render() {
 		return (
-			<div className={"editor-container " + (this.state.editing ? 'editing' : '')} onClick={this.onContainerClick}>
+			<div className={"comment-editor " + (this.state.editing ? 'editing' : '')} onClick={this.onContainerClick}>
 				{ this.state.editing &&
-					<div className="toolbar">
-						<button onClick={this.onBoldClick} className="button button-bold">B</button>
-						<button onClick={this.onItalicClick} className="button button-italic">I</button>
-						<button onClick={this.onUnderlineClick} className="button button-underline">U</button>
-					</div>
+					<EditorToolbar clickHandler={this.handleClick}/>
 				}
 				<div className="editor">
 					<Editor
@@ -73,5 +86,3 @@ class CommentEditor extends React.Component {
 		);
 	}
 }
-
-export default CommentEditor;
