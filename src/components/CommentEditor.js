@@ -1,6 +1,6 @@
 import React from "react";
 import { Editor, EditorState, RichUtils } from "draft-js";
-import './CommentEditor.css';
+import './CommentEditor.scss';
 
 class CommentEditor extends React.Component {
 	constructor(props) {

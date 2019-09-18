@@ -1,0 +1,33 @@
+.editor-container {
+    border: 1px solid #999;
+    border-radius: 3px;
+    max-width: 250px;
+}
+
+.toolbar {
+    border-bottom: 1px solid #999;
+}
+
+.editor {
+    height: 50px;
+
+    .public-DraftEditor-content {
+        height: 100px;
+    }
+
+    /* Fix for a bug with the placeholder */
+    .public-DraftEditorPlaceholder-root {
+        color: #999;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.editing {
+    .editor {
+        height: 100px;
+    }
+}
+
+
+
