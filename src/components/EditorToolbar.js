@@ -15,10 +15,10 @@ export default class EditorToolbar extends React.Component {
 	render() {
 		return (
 			<div className="editor-toolbar">
-                <EditorButton action="bold" clickHandler={this.handleClick} />
-                <EditorButton action="italic" clickHandler={this.handleClick} />
-                <EditorButton action="underline" clickHandler={this.handleClick} />
-            </div>
+          <EditorButton action="bold" clickHandler={this.handleClick} />
+          <EditorButton action="italic" clickHandler={this.handleClick} />
+          <EditorButton action="underline" clickHandler={this.handleClick} />
+      </div>
 		);
 	}
 }
